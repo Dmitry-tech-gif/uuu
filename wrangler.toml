@@ -1,0 +1,13 @@
+name = "fant1kz-worker"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+# Переменные окружения (НЕ секреты — просто конфиг)
+[vars]
+REPO_OWNER = "Dmitry-tech-gif"
+REPO_NAME  = "asset"
+FILE_PATH  = "profile.json"
+
+# GITHUB_TOKEN задаётся отдельно через:
+# wrangler secret put GITHUB_TOKEN
+# (вводишь токен интерактивно — он НЕ попадает в код)
